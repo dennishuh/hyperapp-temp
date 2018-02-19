@@ -1,7 +1,7 @@
 {
-  "name": "hyperapp-one",
+  "name": "hyperapp-temperature",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![Build Status](https://travis-ci.org/selfup/hyperapp-one.svg?branch=master)](https://travis-ci.org/selfup/hyperapp-one) [![Slack](https://hyperappjs.herokuapp.com/badge.svg)](https://hyperappjs.herokuapp.com \"Join us\")",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -35,5 +35,8 @@
     "node-libs-browser": "^2.0.0",
     "webpack": "^3.4.0",
     "webpack-dev-server": "^2.4.2"
+  },
+  "directories": {
+    "test": "test"
   }
 }

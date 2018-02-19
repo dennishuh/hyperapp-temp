@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("https://fonts.googleapis.com/css?family=Lato");
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 200;
   height: 100%;
 }
@@ -54,9 +54,6 @@ input {
 }
 
 .container {
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 10% 80% 10%;
@@ -65,12 +62,39 @@ input {
   justify-content: center;
 }
 
+.content {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  padding: 0 0 0 10px;
+  font-size: 24px;
+  color: gray;
+  margin: auto;
+}
+
 .search {
   grid-column-start: 2;
   grid-row-start: 2;
   margin: auto;
 }
 
+select {
+  display: block;
+  border: none;
+  background: none;
+  height: 65px;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  color: gray;
+  width: 100%;
+}
+
 @keyframes fadeIn {
-  from { opacity: 0; } to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -1,6 +1,6 @@
 import { h, app } from 'hyperapp'
 
-export default ({ setCity, submitSearch }) =>
+export default ({ setCity, submitSearch, setTempScale }) =>
   <div className='search'>
     <input
       onkeyup={
@@ -10,4 +10,12 @@ export default ({ setCity, submitSearch }) =>
       }
       placeholder='City name'
     />
+    <select onchange={
+      e => {
+        setTempScale(e.target.value);
+      }
+    }>
+      <option value="F">Fahrenheit</option>
+      <option value="C">Celsius</option>
+    </select>
   </div>
